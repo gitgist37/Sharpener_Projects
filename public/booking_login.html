@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your booking login page</title>
+    <link rel="stylesheet" href="booking_design.css">
+</head>
+<body>
+    <nav id="navigation">
+        <h1>Booking Appointment</h1>
+    </nav>
+    <div id="mainDiv">
+        <div id="inputDiv">
+            <form class="bookingForm" method="POST">
+                <div id="form_field">
+                    <label for="UserName">UserName:</label>
+                    <input type="name" id="UserName" name="UserName">
+                </div>
+                <div id="form_field">
+                    <label for="UserEmail">UserEmail:</label>
+                    <input type="email" id="UserEmail" name="UserEmail">
+                </div>
+                <div id="form_field">
+                    <label for="UserContact">UserContact:</label>
+                    <input type="number" id="UserContact" name="UserContact" maxlength="10">
+                </div>
+                <div id="form_button">
+                    <button id="b1" type="submit">Book!</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div>
+            <ul id="outputDiv"></ul>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>    
+<script src="../booking_js.js"></script>    
+</body>
+</html>

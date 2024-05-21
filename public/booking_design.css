@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navigation {
+    width: 100vw;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#mainDiv {
+    margin-top: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputDiv {
+    width: 700px;
+    height: 300px;
+    border: 2px solid grey;
+    box-shadow: 0 0 0 3px #ccc;;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#form_field {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 40%;
+}
+
+#form_button {
+    position: relative;
+}
+
+#b1 {
+    position: absolute;
+    left: 40%;
+    width: 150px;
+    box-shadow: 0 0 0 3px #ccc;;
+}
