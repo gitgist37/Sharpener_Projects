@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Review Portal</title>
+    <link rel="stylesheet" href="site.css">
+<body>
+    <nav id="navigation">
+        <h1>Honest Company Reviews</h1>
+    </nav>
+    <div id="mainDiv">
+        <div id="inputDiv">
+            <form class="FeedbackForm" method="POST">
+                <div id="form_field">
+                    <label for="cname">Company:</label>
+                    <input type="name" id="cname" name="cname">
+                </div>
+                <div id="form_field">
+                    <label for="cpros">Pros:</label>
+                    <textarea id="cpros" name="cpros" rows="4" cols="50"></textarea>
+                </div>
+                <div id="form_field">
+                    <label for="ccons">Cons:</label>
+                    <textarea id="ccons" name="ccons" rows="4" cols="50"></textarea>
+                </div>
+                <div id="form_button">
+                    <button id="b1" type="submit">Add Review</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div>
+            <ul id="outputDiv"></ul>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>    
+<script src="../site.js"></script>    
+</body>
+</html>
